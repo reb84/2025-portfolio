@@ -48,7 +48,7 @@
 
       .container {
           width: 100%;
-          max-width: 1100px;
+          max-width: 1200px;
           margin: 0 auto;
           padding-top: 6px;
       }
@@ -91,17 +91,15 @@
           gap: 50px;
       }
 
-      .hero-image {
-          width: 300px;
-          height: 300px;
-          border-radius: 50%;
-          object-fit: cover;
-      }
 
       .hero-content a {
           color: var(--primary-accent);
           text-decoration: none;
           font-style: italic;
+      }
+
+      .hello {
+          font-size: 4rem;
       }
 
       .heroname {
@@ -114,7 +112,7 @@
       }
 
       .hero-content h1 {
-          font-size: 5rem;
+          font-size: 6rem;
           margin-bottom: 20px;
           font-family: var(--header-font)
       }
@@ -154,6 +152,7 @@
           display: flex;
           flex-direction: column;
           margin-bottom: 2rem;
+          font-size: 0.875rem;
       }
 
       .project-image {
@@ -200,17 +199,23 @@
       /* Contact Section */
 
       .contactme {
-          margin-top: 0px;
+          display: flex;
+          justify-content: space-around;
+      }
+
+      .contact-text {
+          text-align: right;
+          width: 40%;
       }
 
       .social-links {
-          margin-top: 50px;
-          text-align: right;
+          width: 40%;
+          text-align: center;
       }
 
       .social-links a {
           font-size: 3rem;
-          margin: 0px 50px;
+          margin-right: 50px;
           color: var(--primary-accent);
           transition: 0.3s;
       }
