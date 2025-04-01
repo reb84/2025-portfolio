@@ -128,12 +128,12 @@
       /* About Section */
       .aboutme {
           display: flex;
-          justify-content: space-around;
+          justify-content: space-between;
       }
 
       .about {
-          text-align: left;
-          width: 40%;
+          text-align: center;
+          width: 30%;
       }
 
       .about h3 {
