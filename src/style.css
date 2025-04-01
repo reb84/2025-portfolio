@@ -13,17 +13,18 @@
           --main-font: 'JetBrains Mono', monospace;
       }
 
-      body,
       html {
+          scroll-behavior: smooth;
+      }
+
+      body {
           font-family: var(--main-font);
           background-color: var(--primary-bg);
           color: var(--primary-txt);
-          scroll-behavior: smooth;
 
       }
 
-      h1,
-      h2 {
+      h1 {
           font-family: var(--header-font);
           font-weight: 300;
           text-transform: lowercase;
@@ -76,12 +77,40 @@
           color: var(--primary-accent);
           text-decoration: none;
           margin-left: 20px;
-          transition: color 0.3s ease;
+          padding: 5px;
+          position: relative;
       }
 
-      nav a:hover {
-          color: var(--primary-hover-accent);
+
+
+      nav a:after,
+      .hero-content a:after {
+          content: '';
+          position: absolute;
+          z-index: -1;
+          top: 65%;
+          left: -0.1em;
+          right: 1em;
+          bottom: 0;
+          transition: all 300ms;
+          background-color: transparent;
       }
+
+      nav a:hover,
+      .hero-content a:hover {
+          color: #fff;
+      }
+
+      nav a:hover:after,
+      .hero-content a:hover:after {
+          top: 0%;
+          right: -0.1em;
+          background-color: var(--primary-accent);
+      }
+
+
+
+
 
       /* Hero */
       .hero {
@@ -96,6 +125,7 @@
           color: var(--primary-accent);
           text-decoration: none;
           font-style: italic;
+          position: relative;
       }
 
       .hello {
@@ -107,9 +137,6 @@
           font-style: italic;
       }
 
-      .hero-content a:hover {
-          color: var(--primary-hover-accent);
-      }
 
       .hero-content h1 {
           font-size: 6rem;
@@ -142,7 +169,7 @@
       .recent-projects {
           display: flex;
           justify-content: space-between;
-          margin-top: 0px;
+          margin-top: 15px;
           flex-wrap: wrap;
           gap: 2rem;
       }
@@ -152,7 +179,7 @@
           display: flex;
           flex-direction: column;
           margin-bottom: 2rem;
-          font-size: 0.875rem;
+
       }
 
       .project-image {
@@ -172,6 +199,7 @@
           text-align: center;
           margin-bottom: 1.3rem;
           flex-grow: 1;
+          font-size: 0.875rem;
       }
 
       .button-container {
@@ -184,10 +212,11 @@
           background-color: var(--primary-accent);
           color: white;
           text-decoration: none;
-          padding: 0.65rem 2rem;
+          padding: 0.6rem 2rem;
           border-radius: 4px;
           font-weight: 500;
           transition: all 0.3s ease;
+          font-size: 0.875rem;
       }
 
       .project-button:hover {
@@ -232,3 +261,19 @@
           font-size: 0.8rem;
           padding-bottom: 20px;
       }
+
+
+      /* Responsive */
+
+
+      /* Small tablets and large phones */
+      @media (min-width: 600px) {}
+
+      /* Tablets and small laptops */
+      @media (min-width: 768px) {}
+
+      /* Desktops */
+      @media (min-width: 992px) {}
+
+      /* Large desktops */
+      @media (min-width: 1200px) {}
