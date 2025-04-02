@@ -1,3 +1,5 @@
+// Back To Top button
+
 const showOnPx = 100;
 const backToTopButton = document.querySelector(".back-to-top");
 
@@ -21,6 +23,8 @@ const goToTop = () => {
 
 backToTopButton.addEventListener("click", goToTop);
 
+// Progress Bar
+
 const pageProgressBar = document.querySelector(".progress-bar");
 document.addEventListener("scroll", () => {
   const scrolledPercentage =
@@ -35,4 +39,10 @@ document.addEventListener("scroll", () => {
   } else {
     backToTopButton.classList.add("hidden");
   }
+});
+
+// Dark Mode
+
+document.getElementById("theme-toggle").addEventListener("click", function () {
+  document.body.classList.toggle("dark-mode");
 });

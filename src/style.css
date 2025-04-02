@@ -5,12 +5,24 @@
 }
 
 :root {
-    --primary-bg: #f7f7ef;
+    --primary-bg: #FFFCF0;
     --primary-txt: #343331;
-    --primary-accent: #ef5659;
+    --primary-accent: #D14D41;
     --primary-hover-accent: #AF3029;
+    --border-line: #F2F0E5;
+    --primary-hover-text: var(--primary-bg);
+
     --header-font: 'Playfair Display', serif;
     --main-font: 'JetBrains Mono', monospace;
+}
+
+.dark-mode {
+    --primary-bg: #121212;
+    --primary-txt: #CECDC3;
+    --primary-accent: #D14D41;
+    --primary-hover-accent: #E6E4D9;
+    --border-line: #282726;
+    --primary-hover-text: var(--primary-accent);
 }
 
 html {
@@ -57,7 +69,7 @@ h3 {
     padding: 20px 50px;
     z-index: 1000;
     background-color: var(--primary-bg);
-    box-shadow: 0px 0px 10px 0px rgba(178, 178, 157, 0.3);
+    border-bottom: 1px solid var(--border-line);
 }
 
 .logo {
@@ -167,7 +179,8 @@ nav a:hover:after,
     border-radius: 8px;
     transition: transform .5s ease;
     overflow: hidden;
-    box-shadow: 2px 2px 10px 0px rgba(178, 178, 157, 1);
+    border: 1px solid var(--border-line);
+    padding: 4px;
 }
 
 .project-image:hover {
@@ -197,7 +210,7 @@ nav a:hover:after,
     background-color: var(--primary-accent);
     color: white;
     text-decoration: none;
-    padding: 0.6rem 2rem;
+    padding: 0.4rem 1.5rem;
     border-radius: 4px;
     font-weight: 500;
     transition: all 0.3s ease;
@@ -207,6 +220,7 @@ nav a:hover:after,
 .project-button:hover {
     background-color: var(--primary-hover-accent);
     transform: translateY(-2px);
+    color: var(--primary-hover-text);
 }
 
 /* Contact Section */
@@ -232,6 +246,10 @@ nav a:hover:after,
     position: relative;
     display: inline-block;
     transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--primary-hover-accent);
 }
 
 .social-links a::before {
@@ -297,6 +315,46 @@ footer p {
     left: 0;
     z-index: 1050;
 }
+
+
+
+
+/* Dark Mode */
+
+
+#theme-toggle {
+    position: fixed;
+    left: 1rem;
+    bottom: 1rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    opacity: 100%;
+    transition: opacity 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Responsive */
