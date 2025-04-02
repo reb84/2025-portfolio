@@ -262,6 +262,33 @@ footer p {
     padding-bottom: 20px;
 }
 
+/* Back To Top */
+.back-to-top {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    opacity: 100%;
+    transition: opacity 0.5s;
+}
+
+.back-to-top-icon {
+    width: 2rem;
+    height: 2rem;
+    color: var(--primary-accent);
+}
+
+.back-to-top:hover {
+    opacity: 60%;
+}
+
+.hidden {
+    opacity: 0%;
+}
+
+
 /* Responsive */
 
 /* Extra Small Screens (Mobile) */

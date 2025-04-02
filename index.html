@@ -20,13 +20,36 @@
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
+    <button class="back-to-top hidden" title="back to top">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="back-to-top-icon"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="m4.5 18.75 7.5-7.5 7.5 7.5"
+        />
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="m4.5 12.75 7.5-7.5 7.5 7.5"
+        />
+      </svg>
+    </button>
+
     <header class="header">
       <div class="logo">REBECCA UPTON</div>
       <nav>
-        <a href="#home">HOME</a>
-        <a href="#about">ABOUT ME</a>
-        <a href="#work">WORK</a>
-        <a href="#contact">CONTACT</a>
+        <a href="#home" title="Home">HOME</a>
+        <a href="#about" title="About Me">ABOUT ME</a>
+        <a href="#projects" title="My Projects">PROJECTS</a>
+        <a href="#contact" title="Contact">CONTACT</a>
       </nav>
     </header>
 
@@ -85,7 +108,7 @@
       </div>
     </section>
 
-    <section id="work" class="section">
+    <section id="projects" class="section">
       <div class="container">
         <div class="recent-projects">
           <!-- ONE -->
@@ -227,5 +250,6 @@
     </section>
 
     <footer><p>© 2025 Rebecca Upton</p></footer>
+    <script src="/src/script.js"></script>
   </body>
 </html>
