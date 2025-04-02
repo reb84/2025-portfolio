@@ -319,42 +319,49 @@ footer p {
 
 
 
-/* Dark Mode */
+/* Theme Toggle */
 
 
-#theme-toggle {
-    position: fixed;
-    left: 1rem;
-    bottom: 1rem;
-    background-color: transparent;
-    border: none;
+.toggle {
     cursor: pointer;
-    opacity: 100%;
-    transition: opacity 0.5s;
+    display: inline-block;
+    top: 0px;
+    position: relative;
 }
 
+.toggle input {
+    display: none;
+}
 
+.toggle label {
+    display: block;
+    width: 40px;
+    height: 22px;
+    padding: 2px;
+    border-radius: 10px;
+    border: 2px solid var(--primary-accent);
+    cursor: pointer;
+    transition: 0.3s;
+}
 
+.toggle label::after {
+    content: "";
+    display: inherit;
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+    background: var(--primary-accent);
+    transition: 0.3s;
+}
 
+.toggle input:checked~label {
+    border-color: var(--primary-hover-accent);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.toggle input:checked~label::after {
+    translate: 17px 0;
+    background: var(--primary-hover-accent);
+}
 
 
 /* Responsive */
