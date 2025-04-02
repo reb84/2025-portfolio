@@ -265,8 +265,8 @@ footer p {
 /* Back To Top */
 .back-to-top {
     position: fixed;
-    right: 2rem;
-    bottom: 2rem;
+    right: 1rem;
+    bottom: 1rem;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -368,6 +368,11 @@ footer p {
         font-size: 3rem;
         margin: 30px 20px;
     }
+
+    /* Back To Top */
+    .back-to-top {
+        display: none;
+    }
 }
 
 /* Small Screens (Tablets) */
@@ -447,6 +452,11 @@ footer p {
         font-size: 3rem;
         margin: 30px 20px;
     }
+
+    /* Back To Top */
+    .back-to-top {
+        display: none;
+    }
 }
 
 /* Medium Screens (Large Tablets) */
@@ -493,6 +503,11 @@ footer p {
     .social-links a {
         font-size: 3rem;
         margin: 30px 20px;
+    }
+
+    /* Back To Top */
+    .back-to-top {
+        display: none;
     }
 }
 
