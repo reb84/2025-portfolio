@@ -288,6 +288,16 @@ footer p {
     opacity: 0%;
 }
 
+/* Progress Bar */
+.progress-bar {
+    height: 0.2rem;
+    background: var(--primary-accent);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+}
+
 
 /* Responsive */
 
