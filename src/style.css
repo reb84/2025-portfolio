@@ -316,14 +316,10 @@
               margin: 5px 10px;
           }
 
-
-
-
           /* HERO */
 
           .hero-content h1 {
               font-size: 3rem;
-
           }
 
           .heroname {
@@ -334,12 +330,14 @@
               font-size: 0.9rem;
           }
 
-          /* ABOUT */
-
-          .aboutme {
+          .aboutme,
+          .recent-projects,
+          .contactme {
               display: flex;
               flex-direction: column;
           }
+
+          /* ABOUT */
 
           .about {
               text-align: center;
@@ -353,22 +351,6 @@
 
           /* PROJECTS */
 
-          .recent-projects {
-              display: flex;
-              flex-direction: column;
-          }
-
-          .project-image {
-              height: auto;
-              margin: 1rem auto;
-          }
-
-          .project-title {
-              text-align: center;
-              margin-bottom: 0.5rem;
-              font-size: 1.5rem;
-          }
-
           .project-button {
               display: block;
               text-align: center;
@@ -376,11 +358,6 @@
           }
 
           /* CONTACT */
-
-          .contactme {
-              display: flex;
-              flex-direction: column;
-          }
 
           .contact-text {
               text-align: center;
@@ -397,25 +374,146 @@
               margin: 30px 20px;
           }
 
-
-
-
-
-
-
-
       }
 
       /* Small Screens (Tablets) */
-      @media only screen and (min-width: 577px) and (max-width: 768px) {}
+      @media only screen and (min-width: 577px) and (max-width: 768px) {
+          .container {
+              width: 80%;
+          }
+
+          /* NAV */
+
+          .header {
+              flex-direction: column;
+              padding: 15px 20px;
+          }
+
+          .logo {
+              margin-bottom: 15px;
+          }
+
+          nav {
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              flex-wrap: wrap;
+          }
+
+          nav a {
+              margin: 5px 10px;
+          }
+
+          /* HERO */
+
+          .hero-content h1 {
+              font-size: 3rem;
+          }
+
+          .heroname {
+              font-size: 4rem;
+          }
+
+          .hero-content p {
+              font-size: 0.9rem;
+          }
+
+          .aboutme,
+          .recent-projects,
+          .contactme {
+              display: flex;
+              flex-direction: column;
+          }
+
+          /* ABOUT */
+
+          .about {
+              text-align: center;
+              width: auto;
+          }
+
+          .about h3 {
+              margin-top: 30px;
+              margin-bottom: 5px;
+          }
+
+          /* PROJECTS */
+
+          .project-button {
+              display: block;
+              text-align: center;
+              margin: 0 auto
+          }
+
+          /* CONTACT */
+
+          .contact-text {
+              text-align: center;
+              width: 100%;
+          }
+
+          .social-links {
+              width: 100%;
+              text-align: center;
+          }
+
+          .social-links a {
+              font-size: 3rem;
+              margin: 30px 20px;
+          }
+      }
 
       /* Medium Screens (Large Tablets) */
       @media only screen and (min-width: 769px) and (max-width: 1024px) {
-
-          /* CSS rules specific for medium screens */
           .container {
               width: 70%;
-              /* Adjust layout for moderate container width on large tablets */
+          }
+
+          .aboutme,
+          .contactme {
+              display: flex;
+              flex-direction: column;
+          }
+
+          /* ABOUT */
+
+          .about {
+              text-align: center;
+              width: auto;
+          }
+
+          .about h3 {
+              margin-top: 30px;
+              margin-bottom: 5px;
+          }
+
+          /* PROJECTS */
+
+          .project-card {
+              flex: 0 0 calc(48% - 1rem);
+          }
+
+          .project-button {
+              display: block;
+              text-align: center;
+              margin: 0 auto
+          }
+
+          /* CONTACT */
+
+          .contact-text {
+              text-align: center;
+              width: 100%;
+          }
+
+          .social-links {
+              width: 100%;
+              text-align: center;
+          }
+
+          .social-links a {
+              font-size: 3rem;
+              margin: 30px 20px;
           }
       }
 
@@ -424,7 +522,50 @@
 
           /* CSS rules specific for large screens */
           .container {
-              width: 60%;
+              width: 80%;
               /* Adjust layout for narrower container width on desktops */
+          }
+
+          .aboutme,
+          .contactme {
+              display: flex;
+              flex-direction: column;
+          }
+
+          /* ABOUT */
+
+          .about {
+              text-align: center;
+              width: 85%;
+              margin: 0 auto;
+          }
+
+          .about h3 {
+              margin-top: 30px;
+              margin-bottom: 5px;
+          }
+
+          /* PROJECTS */
+
+          .project-card {
+              flex: 0 0 calc(48% - 1rem);
+          }
+
+          /* CONTACT */
+
+          .contact-text {
+              text-align: center;
+              width: 80%;
+              margin: 0 auto;
+          }
+
+          .social-links {
+              width: 100%;
+              text-align: center;
+          }
+
+          .social-links a {
+              font-size: 3rem;
+              margin: 30px 20px;
           }
       }
