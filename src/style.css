@@ -317,14 +317,10 @@ footer p {
 }
 
 
-
-
 /* Theme Toggle */
-
 
 .toggle {
     cursor: pointer;
-    display: inline-block;
     top: 80px;
     right: 20px;
     position: relative;
